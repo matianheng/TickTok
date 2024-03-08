@@ -1,0 +1,13 @@
+<view class="intro mine-flex flex-column" bindtap="gotoLogin">
+    <!-- <image class='background-img' src='../../img/topBack.png' mode="widthFix"></image> -->
+    <image class='background-img' src='https://cms-oss.sgmlink.com/6142b893a990ded5af008249/6216fb037f82ded55e4216c9/rights1.png' mode="widthFix"></image>
+    <div class="background-total mine-flex flex-column">
+        <view class="detail" catchtap="gotoLogin">了解详情</view>
+        <!-- <image class='background-logo-one' src="../../img/topLogo1.png" />
+        <image class='background-logo-two' src="../../img/topLogo2.png" />
+        <image class="background-bar" src="../../img/topBar.png" /> 
+        <div bindtap="gotoLogin" class="background-btn mine-flex justify-center">立即咨询</div> -->
+                <!-- <view tt:if="{{smallboxivible}}" class="small-box" bindtap="gotoNextPage"></view> -->
+
+    </div>
+</view>

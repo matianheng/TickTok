@@ -1,0 +1,214 @@
+input::-webkit-input-placeholder {
+  font-size: 32rpx;
+}
+.intro {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    font-size: 32rpx;
+  }
+  .background-image{
+    position: absolute;
+    height : 100%;
+    width: 100%;
+    left: 0px;
+    top: 0px;
+  }
+  .login-form{
+    width: 100%;
+    z-index: 1001;
+    position: absolute;
+    /* 背景图改这里 */
+    top: 840rpx;
+    /* top: calc(); */
+  }
+  .input-common{
+    position: relative;
+    margin: 0 40rpx;
+    padding: 34rpx 0;
+    border-bottom: 2rpx solid rgba(238,238,238,0.3);
+  }
+  .input-common input{
+    color: #fff;
+    font-size: 32rpx;
+    font-weight: 400;
+    color: #ffffff;
+    line-height: 44rpx;
+    letter-spacing: 2rpx;
+  }
+  .empower-button{
+    white-space:nowrap;
+    border-radius: 0;
+    font-size: 30rpx;
+    font-weight: 400;
+    text-align: left;
+    color: #ffffff;
+    line-height: 28rpx;
+    letter-spacing: 2rpx;
+    padding: 18rpx 36rpx;
+    /* background: linear-gradient(135deg,#63636a, #525258); */
+    background: transparent;
+    margin: 0;
+  }
+  .empower-button::after {
+    display: none;
+  }
+  .tips-title{
+    width: 100%;
+    margin-top: 66rpx;
+    font-size: 24rpx;
+    font-weight: 400;
+    color: #999999;
+    line-height: 24rpx;
+  }
+  .small-img{
+    width: 24rpx;
+    height: 24rpx;
+    margin-right: 10rpx;
+  }
+  
+  /* 弹窗 */
+  .popup {
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 1004;
+  }
+  .mask {
+    width: 100%;
+    height: 4128rpx;
+    z-index: 1003;
+    background-color: rgba(0, 0, 0, 0.3);
+    position: absolute;
+    top: 0;
+    bottom: 0;
+  }
+  .popup_main {
+    position: fixed;
+    bottom: 0;
+    left: 50%;
+    width: 100%;
+    height: 80%;
+    transform: translate(-50%, 0);
+    padding: 30rpx 40rpx;
+    box-sizing: border-box;
+    background-color: #fff;
+   }
+  .close_wrapper {
+    width: 100%;
+    height: 40rpx;
+  }
+  .pop_list_wrapper{
+    margin-top: 40rpx;
+    height: 60%;
+  }
+  .bottom-btn{
+    height: 104rpx;
+    /* background: #1a1a1b; */
+    background-color: rgba(89, 89, 96,0.2);
+    border: 2rpx solid #999999;
+    font-size: 32rpx;
+    font-weight: 400;
+    color: #fff;
+    line-height: 48rpx;
+    letter-spacing: 10rpx;
+    margin: 70rpx 56rpx 40rpx;
+  }
+  .city-name{
+    font-size: 32rpx;
+    font-weight: 400;
+    color: #ffffff;
+    line-height: 44rpx;
+    letter-spacing: 2rpx;
+    margin-right: 40rpx;
+  }
+  .error-title{
+    font-size: 24rpx;
+    font-weight: 400;
+    color: #cb002c;
+    line-height: 34rpx;
+    position: absolute;
+    bottom: 8rpx;
+    left: 0;
+  }
+  .place-content{
+    font-weight: 400;
+    font-size: 32rpx;
+    color: #999999;
+    line-height: 44rpx;
+    letter-spacing: 2rpx;
+  }
+  .page-section{
+    box-sizing: border-box;
+    width: 100%;
+    margin-bottom: 60rpx;
+  }
+  .swiper-total{
+    width: 100%;
+    /* height: 1332rpx; */
+    height: 1668rpx;
+    z-index: 1003;
+    /* margin-top: 40rpx; */
+    /* margin-top: 1580rpx; */
+  }
+  .swiper-item{
+    display: block;
+    height: 150px;
+  }
+  .bottom-img{
+    margin-top: 40rpx;
+    width: 100%;
+  }
+  .bottom-text-one{
+    font-size: 60rpx;
+    font-weight: 400;
+    color: #000000;
+    line-height: 72rpx;
+  }
+  .bottom-text-two{
+    margin-top: 4rpx;
+    font-size: 60rpx;
+    font-weight: 400;
+    color: #000000;
+    line-height: 72rpx;
+  }
+  
+  .cityListLetter {
+    width: 100%;
+    padding: 16rpx 24rpx 0rpx;
+    font-size: 30rpx;
+    font-weight: bold;
+    color: #ff7676;
+    /* background-color: skyblue; */
+  }
+  
+  .cityListItem {
+    width: 100%;
+    box-sizing: border-box;
+    padding: 20rpx 10rpx 10rpx;
+    margin-left: 14rpx;
+    font-size: 26rpx;
+    background-color: white;
+    border-bottom: #dedede 1rpx solid;
+  }
+  
+  .select-city-class{
+    width: 100%;
+    height: 70%;
+    z-index: 1004;
+    background: #fff;
+    position: fixed;
+    left: 50%;
+    right: 0;
+    bottom: 0;
+    transform: translate(-50%, 0);
+    padding: 36rpx 0 20rpx;
+    box-sizing: border-box;
+  }
+  .font-color-other{
+    color: #fff;
+    line-height: 16px;
+    font-size: 14px;
+    text-align: center;
+  }

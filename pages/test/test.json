@@ -1,0 +1,6 @@
+{
+    "usingComponents": {
+        "SelectCitiesView": "../../selectCity/selectCity",
+        "agreement":"../../component/agreement/agreement"
+    }
+}

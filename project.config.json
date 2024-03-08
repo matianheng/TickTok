@@ -1,0 +1,57 @@
+{
+  "setting": {
+    "urlCheck": false,
+    "es6": true,
+    "newFeature": false,
+    "postcss": false,
+    "mockUpdate": false,
+    "minified": false,
+    "scripts": false,
+    "mockLogin": false
+  },
+  "appid": "tt8185f7381ebc14a401",
+  "projectname": "fanya_login",
+  "condition": {
+    "miniprogram": {
+      "current": 1663147262088,
+      "list": [
+        {
+          "id": 1663119778840,
+          "name": "pages/indexAhua/indexAhua",
+          "pathName": "pages/indexAhua/indexAhua",
+          "query": "",
+          "scene": "990001",
+          "launchFrom": "scan",
+          "location": "qr_code"
+        },
+        {
+          "id": 1663121711493,
+          "name": "indexBa",
+          "pathName": "pages/indexBa/indexBa",
+          "query": "",
+          "scene": "990001",
+          "launchFrom": "scan",
+          "location": "qr_code"
+        },
+        {
+          "id": 1663147262088,
+          "name": "测试",
+          "pathName": "pages/index/index",
+          "query": "",
+          "scene": "990001",
+          "launchFrom": "scan",
+          "location": "qr_code"
+        },
+        {
+          "id": 1664374541850,
+          "name": "222",
+          "pathName": "pages/indexMny/indexMny",
+          "query": "",
+          "scene": "990001",
+          "launchFrom": "scan",
+          "location": "qr_code"
+        }
+      ]
+    }
+  }
+}

@@ -1,0 +1,5 @@
+@font-face {
+    font-family:'HYQiHe65J';
+    src:url('./HYQiHei-65J.ttf') format('truetype');
+  }
+  

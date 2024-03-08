@@ -1,0 +1,16 @@
+{
+  "name": "NEV_CADI_TIKTOK_MAPP",
+  "version": "1.0.0",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "http://pzakr8:Pass1234@gitlab.sgm.saic-gm.com/CDNWMP/NEV_CADI_TIKTOK_MAPP.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "description": ""
+}

@@ -1,0 +1,167 @@
+<view class="intro mine-flex1 flex-column">
+ 
+    <!-- <scroll-view scroll-y="{{true}}"  style="height:{{windowHeights}}px;" >
+        -->
+            <view    id="demo1" style="height:{{img1height}}px;" class="intro">
+              <image  id="demoImg1" style="" class='background-img' src='https://cms-oss.sgmlink.com/6142b893a990ded5af008249/6216fb037f82ded55e4216c9/rights_1.jpg'
+                    mode="widthFix"></image>
+            </view>
+           <view tt:if="{{showflag}}" id="demo2" style="height:{{img2height}}px;"  class="intro ">
+                <image  id="demoImg2" style=""  class='background-img' src='https://cms-oss.sgmlink.com/6142b893a990ded5af008249/6216fb037f82ded55e4216c9/rights_2.jpg'
+                    mode="widthFix"></image>
+            </view>
+              <view tt:if="{{showflag}}"   id="demo3"  style="height:{{img3height}}px;"  class="intro .mine-flex1 flex-column">
+                <image id="demoImg3" style="" class='background-img' src='https://cms-oss.sgmlink.com/6142b893a990ded5af008249/6216fb037f82ded55e4216c9/rights_3.jpg'
+                    mode="widthFix"></image>
+            </view>
+         <view   tt:if="{{showflag}}"  id="demo4"   style="height:{{img4height}}px;" class="intro .mine-flex1 flex-column">
+                <image id="demoImg4" style="" class='background-img' src='https://cms-oss.sgmlink.com/6142b893a990ded5af008249/6216fb037f82ded55e4216c9/rights_4.jpg'
+                    mode="widthFix"></image>
+            </view>
+               <view  tt:if="{{showflag}}" id="demo5"  style="height:{{img5height}}px;"   class="intro .mine-flex1 flex-column">
+                <image id="demoImg5"  class='background-img' src='https://cms-oss.sgmlink.com/6142b893a990ded5af008249/6216fb037f82ded55e4216c9/rights_5.jpg'
+                    mode="widthFix"></image>
+            </view>
+           <view  tt:if="{{showflag}}" id="demo6" style="height:{{img6height}}px;"  class="intro .mine-flex1 flex-column">
+                <image  id="demoImg6"   class='background-img' src='https://cms-oss.sgmlink.com/6142b893a990ded5af008249/6216fb037f82ded55e4216c9/rights_6.jpg'
+                    mode="widthFix"></image>
+            </view>
+         <view tt:if="{{showflag}}" id="demo7" style="height:{{img7height}}px;"  class="intro .mine-flex1 flex-column">
+                <image  id="demoImg7"      class='background-img' src='https://cms-oss.sgmlink.com/6142b893a990ded5af008249/6216fb037f82ded55e4216c9/rights_7.jpg'
+                    mode="widthFix"></image>
+            </view>
+           <view  tt:if="{{showflag}}" id="demo8" style="height:{{img8height}}px;"  class="intro .mine-flex1 flex-column">
+                <image id="demoImg8" class='background-img' src='https://cms-oss.sgmlink.com/6142b893a990ded5af008249/6216fb037f82ded55e4216c9/rights_8.jpg'
+                    mode="widthFix"></image>
+            </view>
+             <view  tt:if="{{showflag}}"  id="demo9" style="height:{{img9height}}px;"  class="intro .mine-flex1 flex-column">
+                <image id="demoImg9"  class='background-img' src='https://cms-oss.sgmlink.com/6142b893a990ded5af008249/6216fb037f82ded55e4216c9/rights_9.jpg'
+                    mode="widthFix"></image>
+            </view>
+            <view  tt:if="{{showflag}}" id="demo10" style="height:{{img10height}}px;"  class="intro .mine-flex1 flex-column">
+                <image id="demoImg10" class='background-img' src='../../img/imgChange/overTabs.png'
+                    mode="widthFix"></image>
+            </view> 
+</view>
+<view class="tabs" bindtap="makePhoneCall">
+    <view class="tab-icon">
+        <image class="tab-iconview"   src='../../img/imgChange/call.png'  mode="widthFix"></image>
+        <view  class="tab-texts" >咨询专线</view>
+    </view>
+   
+</view>
+<view class="tabs8"  tt:if="{{tabs8Flag}}"  >
+    <div class="tabs8_text"><div class="tabs8_text_info">请勿频繁提交，</div>
+    <div class="tabs8_text_info">也可点击咨询专线获取专属服务</div></div>
+    
+ </view> 
+
+<view class="tabs1" tt:if="{{!tabs2Flag}}" bindtap="bindTabs1">
+    <view class="tab-icon">
+    <image class="tab-iconview"  src='../../img/imgChange/cadilacce.png' mode="widthFix"></image>
+    <view class="tab-texts">一键试驾</view>
+</view>
+</view>
+
+<view class="tabs6"  style="width:{{windowWidth}}px"  tt:if="{{tabs6Flag}}">
+    <view  class="tabs6_view" >
+       <view style="display: flex;padding: 16px 20px 20px 20px;" >
+          <view  class="tabs6_text" >为了即时提供专业服务</view>
+          <view class="tabs6_view_close">
+            <image class="tab6-close" bindtap="tab6Close"  src='../../img/imgChange/icon_close@2x.png'  mode="widthFix"></image>
+          </view>
+         
+       
+        </view>
+     
+        <view style="display: flex;padding: 0 20px 44px 20px;" >
+            <view class="tabs6_view2_close">
+                <image class="tab6-close2" bindtap="tab6Close"  src='../../img/imgChange/logo2@2x.png'  mode="widthFix"></image>
+              </view>
+           <view class="tabs6_text2">凯迪拉克IQ申请获取你的抖音绑定手机号</view>
+        </view>
+
+        <view style="display: flex;padding: 0 20px;" >
+            <!-- <button class="bottom-btn mine-flex justify-center" formType="submit">立即试驾</button> -->
+           <button tt:if="{{oneButtonflag}}" class="tabs6_button"   open-type="getPhoneNumber"
+           bindgetphonenumber="getPhoneNumberHandler" >授权获取手机号</button>
+           <button tt:if="{{!oneButtonflag}}" class="tabs6_button"    
+           bindtap="noGetPhoneNumberHandler" >一键试驾</button>
+        </view>
+    </view>
+</view>
+
+
+
+
+    <view class="tabs2" tt:if="{{testDriveFlag}}">
+
+        <form catchsubmit="formSubmit">
+            <view class="tab2-text">
+                <view>预约试驾
+                   
+                        <image class="tab2-close" bindtap="tab2Close"  src='../../img/imgChange/icon_close@2x.png'  mode="widthFix"></image>
+                </view> 
+            </view>
+            <view class="tab2-text_info">
+                即可锁定专属权益
+            </view>
+            <view class="tab2-text_title">
+                联系方式
+            </view>
+            <view class="input-common mine-flex justify-between input-common-margin" style="border:1px solid {{inputClass}};">
+               
+                <input type="number" value="{{phone}}" placeholder="请输入你的手机号" maxlength="11"
+                    bindinput="handleInputPhone"
+                    bindblur="bindblurPhone"
+                    bindfocus="bindfocus"
+                    placeholder-style=" padding-left: 10px;font-size:14px;color:#9298a6;"
+                    />
+                <button class="empower-button"     open-type="getPhoneNumber"
+                    bindgetphonenumber="getPhoneNumberHandler">一键授权</button>
+            </view>
+           <view class="error-title">
+            <text  tt-if="{{isPhoneivible}}">请输入正确的11位手机号码</text>
+     
+           </view>
+               
+            <view class="tab2-text_title">
+                你的城市
+            </view>
+            <view   class="input-common mine-flex justify-between input-common-margin" bindtap="handleCityFocus" style="border:1px solid {{inpuCitlyClass}};">
+                <view tt:if="{{cityArrName.length==0}}" class="place-content">请选择你的城市</view>
+                <view tt:if="{{cityArrName.length!==0}}" class=" mine-flex">
+                    <view class="city-name" tt:for="{{cityArrName}}">{{item[0]}}</view>
+                </view>
+                    <image class="mine-image"
+                    src="../../img/imgChange/icon_arrow-down.png" />
+                </view>
+                <view  >
+                    <text  tt-if="{{isCitiyivible}}">请选择你所在的城市</text>
+             
+                   </view>
+               <view class="tips-title2 mine-flex">
+                <image tt:if="{{isPrivacyiible}}" class="small-img" bindtap="privacyChoose"
+                    src="../../img/imgChange/selectOver.png" />
+                <image tt:if="{{!isPrivacyiible}}" class="small-img" bindtap="privacyChoose"
+                    src="../../img/imgChange/Thedefault2@2x.png" />
+                <div><span bindtap="privacyChoose">我已阅读并同意</span>
+                    <span style="color: #ffffff;" bindtap="openPop">《个人隐私政策》</span>
+                </div>
+            </view>
+            <view>
+                <button class="bottom-btn mine-flex justify-center" formType="submit">立即试驾</button>
+            </view>
+        </form>
+    </view>
+    <!--协议组件 -->
+    <view class='popup' tt:if="{{popShow}}">
+        <agreement bind:closePop='closePop'></agreement>
+    </view>
+    <!-- 城市列表组件 -->
+    <view tt:if="{{isSelectivible}}">
+        <SelectCitiesView class="select-city-class" cityArrName='{{cityArrName}}' allCities='{{allCities}}'
+            bind:citySelect='onCitySelect' bind:subPreLocation='handleCityFocus' bind:closeCity='closePop'
+            letter-class='cityListLetter' item-class='cityListItem'>
+    </SelectCitiesView>
+    </view>

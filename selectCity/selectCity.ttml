@@ -1,0 +1,32 @@
+<!-- /Users/dss/workspace/NEV_CADI_TIKTOK_MAPP/selectCity/selectCity.ttml -->
+
+<scroll-view class='cityList' scroll-y scroll-into-view='{{currentIndex}}'  scroll-top='{{scrollTop}}'>
+     <view class='mine-flex justify-center' style="border-bottom: 2rpx solid #EEEEEE;padding:0 0 40rpx;">
+          <view>用车城市</view>       
+          <image style="position: absolute;top: 0rpx;right: 40rpx;" class='mine-image-2' src='https://cms-oss.sgmlink.com/5faa48b794f5f/617b9c2fecacded5dfcc70e4/WeChat%20Image_20211029152629.png' bindtap='closeCity'></image>
+     </view>
+     <!--  -->
+     <view tt:if="{{syncInfo!=='ios'}}" style="padding: 30rpx 40rpx 0;" class="mine-flex">
+          <image class="img-icon" src="../img/location.png" />
+          <view tt:if="{{cityArrName.length==1}}" style="margin: 0 20rpx 0;">{{cityArrName}}</view>
+          <image class="img-icon" src="../img/refresh.png" bindtap="subPreLocation" />
+     </view>
+     <view style="padding: 30rpx 40rpx 0;" class="select-title" tt:if="{{letterArr.length==0}}">请选择</view>
+     <view style="padding: 30rpx 40rpx 0;" class="mine-flex" tt:if="{{letterArr.length>0}}">
+          <view style="margin-right: 40rpx" tt:for="{{letterArr}}" class="{{index==letterArr.length-1? 'common-title-actived': 'common-title'}}">
+               {{item}}    
+          </view>
+     </view>
+     <!-- <view tt:for='{{allCities}}'>
+          <view tt:for='{{item.cityList}}' tt:for-item='cityItem' bindtap='citySelectEvent' data-city='{{cityItem.name}}' data-letter='{{cityItem.key}}'>{{cityItem.name}}</view>
+     </view> -->
+     <!-- <view tt:for="{{letterText}}">{{item}}</view> -->
+     <view style="padding: 0 40rpx 0;">
+          <view tt:for="{{allCities}}" tt:key="{{index}}" class="select-content mine-flex justify-between"  bindtap='citySelectEvent' data-index="{{index}}" >
+               <view>{{item.cityName}}</view>
+               <image tt:if="{{arrKey==index}}" style="width: 40rpx;height: 40rpx;" src="../img/current.png" />
+          </view>
+     </view>
+</scroll-view>
+
+<!-- <text class='letterText' hidden='{{isLetterHidden}}' style='top:{{letterTop}}px;left:{{letterLeft}}px'>{{letterText}}</text> -->

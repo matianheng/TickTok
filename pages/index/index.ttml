@@ -1,0 +1,237 @@
+<view class="fontFarm">
+    <view>
+        <scroll-view scroll-y="{{scrolly}}" scroll-with-animation="{{true}}" style="height:{{windowHeights}}px"
+            upper-threshold="{{50}}" lower-threshold="{{50}}" bindscrolltoupper="upper" bindscrolltolower="lower"
+            bindscroll="scroll" scroll-into-view="{{toView}}" scroll-top="{{scrollTop}}">
+              
+            <view id="demo1" style="height:530px" class="intro .mine-flex1 flex-column">
+              <image class='background-img' src='https://cms-oss.sgmlink.com/6142b893a990ded5af008249/6216fb037f82ded55e4216c9/discover_1.jpg'
+                   ></image>
+            </view>
+            <view id="demo2" style="height:700px"  class="intro .mine-flex1 flex-column">
+                <image class='background-img' src='https://cms-oss.sgmlink.com/6142b893a990ded5af008249/6216fb037f82ded55e4216c9/discover_2.jpg'
+                    mode="widthFix"></image>
+            </view>
+            <view id="demo3" style="height:800px" class="intro .mine-flex1 flex-column">
+                <image class='background-img' src='https://cms-oss.sgmlink.com/6142b893a990ded5af008249/6216fb037f82ded55e4216c9/discover_3.jpg'
+                   ></image>
+            </view>
+            <view id="demo4" style="height:800px" class="intro .mine-flex1 flex-column">
+                <image class='background-img' src='https://cms-oss.sgmlink.com/6142b893a990ded5af008249/6216fb037f82ded55e4216c9/discover_4.jpg'
+                     ></image>
+            </view>
+            <view id="demo5" style="height:800px" class="intro .mine-flex1 flex-column">
+                <image class='background-img' src='https://cms-oss.sgmlink.com/6142b893a990ded5af008249/6216fb037f82ded55e4216c9/discover_5.jpg'
+                   ></image>
+            </view>
+            <view id="demo6" style="height:800px" class="intro .mine-flex1 flex-column">
+                <image class='background-img' src='https://cms-oss.sgmlink.com/6142b893a990ded5af008249/6216fb037f82ded55e4216c9/discover_6.jpg'
+                    ></image>
+            </view>
+            <view id="demo7"  style="height:{{windowHeights}}px;z-index:1995"    class="intro .mine-flex1 flex-column ">
+                <!-- <image class='background-img' src='../../img/imgChange/WechatIMG0d715dff8924a6b938396fc03e663a18.jpeg' mode="widthFix"></image> -->
+         
+                    <video tt:if="{{autoplayflag}}" style="width: 100%;height:{{videoheight}}px" id="myVideo"
+                        src="https://cms-oss.sgmlink.com/6142b893a990ded5af008249/6327f1b5d30dded5fab8fa8e/index.m3u8"
+                         show-fullscreen-btn="{{true}}"
+                        loop="{{true}}" muted="{{false}}" 
+                        vslide-gesture-in-fullscreen="{{true}}"
+                        enable-play-gesture="{{autoplayflag}}"
+                         bindended="bindended" 
+                         bindplay="bindplay"
+                        bindpause="bindpause"
+                        autoplay="{{autoplayflag}}"
+                        bindfullscreenchange="bindfullscreenchange"
+                        poster="https://cms-oss.sgmlink.com/6142b893a990ded5af008249/6216fb037f82ded55e4216c9/discover_video_img.jpg"
+                        ></video>
+                    <view class='myVideoMsg'>
+                        <image class='background-img' src='https://cms-oss.sgmlink.com/6142b893a990ded5af008249/6216fb037f82ded55e4216c9/discover_bottom.jpg'
+                        mode="widthFix"></image>
+                    </view>
+   
+            </view>
+        </scroll-view>
+    </view>
+</view>
+
+<!-- tab 测试多个渠道时放开 -->
+<!-- <view class="tabs7" bindtap="gotoNextPage">
+ 
+   
+</view> -->
+<view class="tabs8"  tt:if="{{tabs8Flag}}"  >
+   <div class="tabs8_text"><div class="tabs8_text_info">请勿频繁提交，</div>
+   <div class="tabs8_text_info">也可点击咨询专线获取专属服务</div></div>
+   
+</view> 
+
+<view class="tabs" bindtap="makePhoneCall">
+    <view class="tab-icon">
+        <image class="tab-iconview"   src='../../img/imgChange/call.png'  mode="widthFix"></image>
+        <view  class="tab-texts" >咨询专线</view>
+    </view>
+   
+</view>
+
+<view class="tabs1" tt:if="{{!tabs2Flag}}" bindtap="bindTabs1">
+    <view class="tab-icon">
+    <image class="tab-iconview"  src='../../img/imgChange/cadilacce.png' mode="widthFix"></image>
+    <view class="tab-texts">一键试驾</view>
+</view>
+</view>
+
+
+
+
+
+<view class="tabs3" tt:if="{{tabs2Flag}}">
+    <view style="width: 30px; height:100%" bindtap="tabs3Close">
+        <image class="tabs3-icon"   src='../../img/imgChange/icon_close@2x.png' mode="widthFix"></image>
+    </view>
+    <view style="width: 200px; height:100%;;position: absolute;left: 32px;">
+      <view  class="tabs3_tab" >
+        <view class="tabs3_tab_title">
+            预约试驾
+        </view>
+        <view class="tabs3_tab1">
+            即刻锁定专属权益
+        </view>
+      </view>
+
+    </view>
+       <!-- bindgetphonenumber="getPhoneNumberHandler" open-type="getPhoneNumber" -->
+    <view  tt:if="{{oneButtonflag}}" style=" height:100%;position: absolute;right: 27px;">
+        <button class="tabs3_button" 
+  
+        bindtap="tabs3bindtap"
+        >一键试驾</button>
+      </view>
+      <view tt:if="{{!oneButtonflag}}" style=" height:100%;position: absolute;right: 27px;">
+        <button class="tabs3_button" 
+        bindtap="noGetPhoneNumberHandler"
+        >一键试驾</button>
+      </view>
+</view>
+<view class="tabs2" tt:if="{{testDriveFlag}}">
+
+    <form catchsubmit="formSubmit">
+        <view class="tab2-text">
+            <view>预约试驾
+               
+                    <image class="tab2-close" bindtap="tab2Close"  src='../../img/imgChange/icon_close@2x.png'  mode="widthFix"></image>
+            </view> 
+        </view>
+        <view class="tab2-text_info">
+            即可锁定专属权益
+        </view>
+        <view class="tab2-text_title">
+            联系方式
+        </view>
+        <view class="input-common mine-flex justify-between input-common-margin" style="border:1px solid {{inputClass}};">
+           
+            <input type="number" value="{{phone}}" placeholder="请输入你的手机号"
+                maxlength="11"
+                bindinput="handleInputPhone"
+                bindblur="bindblurPhone"
+                bindfocus="bindfocus"
+                placeholder-style=" padding-left: 10px;font-size:14px;color: #9298a6;"
+                />
+            <button class="empower-button"       open-type="getPhoneNumber"
+                bindgetphonenumber="getPhoneNumberHandler" >一键授权</button>
+            
+          
+        </view>
+       <view class="error-title">
+        <text  tt-if="{{isPhoneivible}}">请输入正确的11位手机号码</text>
+ 
+       </view>
+           
+        <view class="tab2-text_title">
+            你的城市
+        </view>
+        <view   class="input-common mine-flex justify-between input-common-margin" bindtap="handleCityFocus" style="border:1px solid {{inpuCitlyClass}};">
+            <view tt:if="{{cityArrName.length==0}}" class="place-content">请选择你的城市</view>
+            <view tt:if="{{cityArrName.length!==0}}" class=" mine-flex">
+                <view class="city-name" tt:for="{{cityArrName}}">{{item[0]}}</view>
+            </view>
+            <!-- <image class="mine-image"
+                src="https://cms-oss.sgmlink.com/5faa48b794f5f/617b9c2fecacded5dfcc70e4/img_arr_right.png" /> -->
+                <image class="mine-image"
+                src="../../img/imgChange/icon_arrow-down.png" />
+            </view>
+            <view  >
+                <text  tt-if="{{isCitiyivible}}">请选择你所在的城市</text>
+         
+               </view>
+        
+        <view class="tips-title2 mine-flex">
+            <image tt:if="{{isPrivacyiible}}" class="small-img" bindtap="privacyChoose"
+                src="../../img/imgChange/selectOver.png" />
+            <image tt:if="{{!isPrivacyiible}}" class="small-img" bindtap="privacyChoose"
+                src="../../img/imgChange/Thedefault2@2x.png" />
+            <div><span bindtap="privacyChoose">我已阅读并同意</span>
+                <span style="color: #ffffff;" bindtap="openPop">《个人隐私政策》</span>
+            </div>
+        </view>
+        <view>
+            <button class="bottom-btn mine-flex justify-center" formType="submit">立即试驾</button>
+        </view>
+    </form>
+</view>
+<!--协议组件 -->
+<view class='popup' tt:if="{{popShow}}">
+    <agreement bind:closePop='closePop2'></agreement>
+</view>
+<!-- 城市列表组件 -->
+<view tt:if="{{isSelectivible}}">
+    <SelectCitiesView class="select-city-class" cityArrName='{{cityArrName}}' allCities='{{allCities}}'
+        bind:citySelect='onCitySelect' bind:subPreLocation='handleCityFocus' bind:closeCity='closePop'
+        letter-class='cityListLetter' item-class='cityListItem'>
+    </SelectCitiesView>
+</view>
+<view class="tabs4"  >
+   
+          <view class="itemsClass" tt:for="{{items}}"  tt:key="{{item.value}}" >
+              <view class="{{item.witle}}"></view>
+          </view>
+    
+</view>
+
+<view class="tabs5" tt:if="{{tabs5Flag}}" bindtap="bindtap5">
+    <image class="tab5-iconview"  src='../../img/imgChange/logo@2x.png' mode="widthFix"></image>
+    <view class="tab5-texts">  下载APP </view>
+</view>
+
+ 
+
+ <view class="tabs6"  style="width:{{windowWidth}}px"  tt:if="{{tabs6Flag}}">
+    <view  class="tabs6_view" >
+       <view style="display: flex;padding: 16px 20px 20px 20px;" >
+          <view  class="tabs6_text" >为了即时提供专业服务</view>
+          <view class="tabs6_view_close">
+            <image class="tab6-close" bindtap="tab6Close" 
+             src='../../img/imgChange/icon_close@2x.png'  mode="widthFix"></image>
+          </view>
+         
+       
+        </view>
+     
+        <view style="display: flex;padding: 0 20px 44px 20px;" >
+            <view class="tabs6_view2_close">
+                <image class="tab6-close2" bindtap="tab6Close"  
+                src='../../img/imgChange/logo2@2x.png'    ></image>
+              </view>
+           <view class="tabs6_text2">凯迪拉克IQ申请获取你的抖音绑定手机号</view>
+        </view>
+
+        <view style="display: flex;padding: 0 20px;" >
+            <!-- <button class="bottom-btn mine-flex justify-center" formType="submit">立即试驾</button> -->
+           <button tt:if="{{oneButtonflag}}" class="tabs6_button"   open-type="getPhoneNumber"
+           bindgetphonenumber="getPhoneNumberHandler2" >授权获取手机号</button>
+           <button tt:if="{{!oneButtonflag}}" class="tabs6_button"    
+           bindtap="noGetPhoneNumberHandler" >一键试驾</button>
+        </view>
+    </view>
+</view>
+
+ 

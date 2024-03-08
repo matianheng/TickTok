@@ -1,0 +1,10 @@
+{
+    "usingComponents": {
+        "SelectCitiesView": "../../selectCity/selectCity",
+        "agreement":"../../component/agreement/agreement",
+        "userOrderCard":"../../component/userOrderCard/userOrderCard"
+    },
+    "navigationBarTitleText": "凯迪拉克IQ"
+  
+   
+}

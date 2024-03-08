@@ -1,0 +1,135 @@
+{
+  "pages":[
+    "pages/index/index",
+    "pages/index1/index",
+    "pages/sUniversal/sUniversal",
+    "pages/sPriWel/sPriWel",
+    "pages/indexXGXZ/indexXGXZ",
+
+    "pages/indexChannelOne/indexChannelOne",
+    "pages/indexChannelTwo/indexChannelTwo",
+    "pages/indexChannelThree/indexChannelThree",
+
+    "pages/indexGao/indexGao",
+    "pages/indexNan/indexNan",
+    "pages/indexJi/indexJi",
+    "pages/indexXiao/indexXiao",
+    "pages/indexHo/indexHo",
+    "pages/indexBa/indexBa",
+    "pages/indexHuge/indexHuge",
+    "pages/indexChe/indexChe",
+    "pages/indexNanche/indexNanche",
+    "pages/indexQin/indexQin",
+    "pages/indexQiche/indexQiche",
+    "pages/indexWu/indexWu",
+    "pages/indexSu/indexSu",
+    "pages/indexZhou/indexZhou",
+    "pages/indexAhua/indexAhua",
+    "pages/indexDa/indexDa",
+
+    "pages/indexWan/indexWan",
+    "pages/indexMarry/indexMarry",
+    "pages/indexLiPlay/indexLiPlay",
+    "pages/indexDai/indexDai",
+    "pages/indexChen/indexChen",
+    "pages/indexMeng/indexMeng",
+    "pages/indexTuzi/indexTuzi",
+    "pages/indexQianMore/indexQianMore",
+    "pages/indexVincent/indexVincent",
+
+    "pages/test/test",
+    "pages/loginPage/loginPage",
+
+"pages/indexMars/indexMars",
+"pages/indexDygfzh/indexDygfzh",
+"pages/indexHgsc/indexHgsc",
+"pages/indexHyxD/indexHyxD",
+"pages/indexYttd/indexYttd",
+"pages/indexTtxay/indexTtxay",
+"pages/indexScdaf/indexScdaf",
+"pages/indexTzw/indexTzw",
+"pages/indexDn/indexDn",
+"pages/indexFy/indexFy",
+"pages/indexMnds/indexMnds",
+"pages/indexXmzyymj/indexXmzyymj",
+"pages/indexNxy/indexNxy",
+"pages/indexBjsc/indexBjsc",
+"pages/indexHdt/indexHdt",
+"pages/indexMsmt/indexMsmt",
+"pages/indexWgff/indexWgff",
+"pages/indexXy/indexXy",
+"pages/indexYjt/indexYjt",
+
+
+
+
+"pages/indexMny/indexMny",
+"pages/indexQssy/indexQssy",
+"pages/indexWzm/indexWzm",
+"pages/indexMdmd/indexMdmd",
+"pages/indexMrLr/indexMrLr",
+"pages/indexFllw/indexFllw",
+"pages/indexDbsc/indexDbsc",
+"pages/indexDwjgyqx/indexDwjgyqx",
+"pages/indexBqymb/indexBqymb",
+"pages/indexXwsc/indexXwsc",
+"pages/indexLkdy/indexLkdy",
+"pages/indexJhsc/indexJhsc",
+"pages/indexCtxh/indexCtxh",
+"pages/indexXcdb/indexXcdb",
+"pages/indexCgsc/indexCgsc",
+"pages/indexZncj/indexZncj",
+"pages/indexZxh/indexZxh",
+"pages/indexBkA/indexBkA",
+"pages/indexBkB/indexBkB",
+"pages/indexBkC/indexBkC",
+"pages/indexBkD/indexBkD",
+"pages/indexBkE/indexBkE",
+"pages/indexBkF/indexBkF",
+"pages/indexBkG/indexBkG",
+"pages/indexBkH/indexBkH",
+"pages/indexBkI/indexBkI",
+"pages/indexBkJ/indexBkJ",
+"pages/indexBkK/indexBkK",
+"pages/indexBkL/indexBkL"
+
+
+
+
+
+  ],
+  "window":{
+    "navigationBarTitleText": "凯迪拉克IQ",
+    "navigationBarBackgroundColor": "#050505",
+    "backgroundColor": "#050505",
+    "navigationStyle": "default"
+   
+    
+  }
+
+  ,    
+  "tabBar": {
+    "color": "#505050",
+    "selectedColor": "#fff",
+    "borderStyle": "black #000",
+    "backgroundColor": "#000",
+  
+    "list": [
+        {
+            "pagePath": "pages/index/index",
+            "iconPath": "./img/imgChange/icon_left_hidden.png",
+          
+            "selectedIconPath": "./img/imgChange/icon_left_show.png",
+            "text": "探索锐歌"
+        },
+        {
+            "pagePath": "pages/test/test",
+            "iconPath": "./img/imgChange/icon_right_hidden.png",
+            "selectedIconPath": "./img/imgChange/icon_right_show.png",
+            "text": "限时权益"
+        }
+    ]
+},
+"usingProvide": true,
+"component2": true
+}

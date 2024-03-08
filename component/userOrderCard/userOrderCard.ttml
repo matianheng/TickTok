@@ -1,0 +1,59 @@
+<view   tt:if="{{onekeyFlag}}">
+     <view class="tab-text">
+         预约试驾
+     </view>
+     <view class="tab-text_info">
+         即可锁定专属权益
+     </view>
+     <view class="tips-title mine-flex justify-center">
+         <image tt:if="{{isPrivacyiible}}" class="small-img" bindtap="privacyChoose"
+             src="https://cms-oss.sgmlink.com/5faa48b794f5f/617b9c2fecacded5dfcc70e4/form_check_checked.png" />
+         <image tt:if="{{!isPrivacyiible}}" class="small-img" bindtap="privacyChoose"
+             src="https://cms-oss.sgmlink.com/5faa48b794f5f/617b9c2fecacded5dfcc70e4/form_check_no.png" />
+         <div><span bindtap="privacyChoose">我已阅读并同意</span>
+             <span style="color: #ffffff;" bindtap="openPop">《个人隐私政策》</span>
+         </div>
+     </view>
+     <view class="tips-title mine-flex justify-center">
+         <button class="empower-button1" open-type="getPhoneNumber"
+             bindgetphonenumber="getPhoneNumberHandler">一键授权</button>
+     </view>
+ </view>
+ <view   tt:if="{{!onekeyFlag}}">
+     <view class="tab-text">
+         预约试驾
+     </view>
+     <view class="tab-text_info">
+         即可锁定专属权益
+     </view>
+     <form catchsubmit="formSubmit">
+         <view class="input-common mine-flex justify-between">
+             <input type="number" value="{{phone}}" placeholder="请输入你的手机号" maxlength="11"
+                 bindinput="handleInputPhone"
+                 placeholder-style="font-weight: 400;text-align: left;color: #999999;line-height: 44rpx;letter-spacing: 2rpx;" />
+             <button class="empower-button" open-type="getPhoneNumber"
+                 bindgetphonenumber="getPhoneNumberHandler">一键授权</button>
+             <text class="error-title" tt-if="{{isPhoneivible}}">请输入正确的11位手机号码</text>
+         </view>
+         <view class="input-common mine-flex justify-between" bindtap="handleCityFocus">
+             <view tt:if="{{cityArrName.length==0}}" class="place-content">请选择你的城市</view>
+             <view tt:if="{{cityArrName.length!==0}}" class=" mine-flex">
+                 <view class="city-name" tt:for="{{cityArrName}}">{{item[0]}}</view>
+             </view>
+             <image class="mine-image"
+                 src="https://cms-oss.sgmlink.com/5faa48b794f5f/617b9c2fecacded5dfcc70e4/img_arr_right.png" />
+         </view>
+         <view class="tips-title2 mine-flex justify-center">
+             <image tt:if="{{isPrivacyiible}}" class="small-img" bindtap="privacyChoose"
+                 src="https://cms-oss.sgmlink.com/5faa48b794f5f/617b9c2fecacded5dfcc70e4/form_check_checked.png" />
+             <image tt:if="{{!isPrivacyiible}}" class="small-img" bindtap="privacyChoose"
+                 src="https://cms-oss.sgmlink.com/5faa48b794f5f/617b9c2fecacded5dfcc70e4/form_check_no.png" />
+             <div><span bindtap="privacyChoose">我已阅读并同意</span>
+                 <span style="color: #ffffff;" bindtap="openPop">《个人隐私政策》</span>
+             </div>
+         </view>
+         <view>
+             <button class="bottom-btn mine-flex justify-center" formType="submit">提交</button>
+         </view>
+     </form>
+ </view>
